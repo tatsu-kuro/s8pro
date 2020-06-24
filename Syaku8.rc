@@ -1,0 +1,260 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Syaku8.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ファイル(&F)"
+    BEGIN
+        MENUITEM "終了(&Q)",                    ID_APP_EXIT
+    END
+    POPUP "オプション(&O)"
+    BEGIN
+        MENUITEM "測定 : 低速(&S)",             IDC_FFT0
+        MENUITEM "測定 : 高速(&F)",             IDC_FFT1
+        MENUITEM "測定 : 超速(&V)",             IDC_FFT2
+        MENUITEM SEPARATOR
+        MENUITEM "音律表示 : C D E(&C)",        ID_CDEF
+        MENUITEM "音律表示 : ドレミ(&D)",       ID_DORE
+        MENUITEM SEPARATOR
+        MENUITEM "A の初期値 =440Hz(&A)",       IDC_A440
+        MENUITEM SEPARATOR
+        MENUITEM "青点灯 なし(&0)",             IDC_00SNT
+        MENUITEM "青点灯 10セント以内(&1)",     IDC_10SNT
+        MENUITEM "青点灯 20セント以内(&2)",     IDC_20SNT
+        MENUITEM "青点灯 30セント以内(&3)",     IDC_30SNT
+        MENUITEM SEPARATOR
+        MENUITEM "純正律表示",                  IDC_JUNS8
+    END
+    POPUP "表示(&D)"
+    BEGIN
+        MENUITEM "源波形 : 11.5ms(&1)",         IDC_W0
+        MENUITEM "源波形 : 23ms(&2)",           IDC_W1
+        MENUITEM "源波形 : 46ms(&3)",           IDC_W2
+        MENUITEM SEPARATOR
+        MENUITEM "FFT Lineal : 0 - 2700Hz(&4)", IDC_2700
+        MENUITEM "FFT Lineal : 0 - 5400Hz(&5)", IDC_5400
+        MENUITEM "FFT Lineal : 0 - 10800Hz(&6)", IDC_10800
+        MENUITEM "FFT Log. : 0 - 2700Hz(&7)",   IDC_2700LOG
+        MENUITEM "FFT Log. : 0 - 5400Hz(&8)",   IDC_5400LOG
+        MENUITEM "FFT Log. : 0 - 10800Hz(&9)",  IDC_10800LOG
+        MENUITEM SEPARATOR
+        MENUITEM "五線譜とセント表示(&F)",      IDC_NOTESHZ
+        MENUITEM "同上 : 楽器音域のみ(&G)",     IDC_NOTESHZLIMIT
+    END
+    POPUP "楽器(&I)"
+    BEGIN
+        MENUITEM "琴古流尺八(&1)",              IDC_kinko
+        MENUITEM "都山流尺八(&2)",              IDC_tozan
+        MENUITEM "七孔尺八(&3)",                IDC_just
+        MENUITEM "篠笛(&4)",                    IDC_sinobue
+        MENUITEM "能管(&5)",                    IDC_noukan
+        MENUITEM SEPARATOR
+        MENUITEM "オカリナ(&6)",                IDC_ocarina
+        MENUITEM "４孔オカリナ(&7)",            IDC_ocarina4
+        MENUITEM "フルート(&8)",                IDC_flute
+        MENUITEM "クラリネット(&9)",            IDC_clarinet
+        MENUITEM "トランペット(&a)",            IDC_trumpet
+        MENUITEM "ソプラノサックス(&b)",        IDC_sopranosax
+        MENUITEM "アルトサックス(&c)",          IDC_altosax
+        MENUITEM "テナーサックス(&d)",          IDC_tenorsax
+        MENUITEM "トロンボーン(&e)",            IDC_trombone
+        MENUITEM "ホルン F(&f)",                IDC_horn
+        MENUITEM "ホルン B(&g)",                IDC_bhorn
+        MENUITEM "リコーダー(&h)",              IDC_recorder
+        MENUITEM "オーボエ(&i)",                IDC_oboe
+        MENUITEM "ティンホイッスル(&j)",        IDC_tin
+        MENUITEM "バンスリ(&k)",                IDC_bansuri
+        MENUITEM SEPARATOR
+        MENUITEM "ドレミ CDE(&l)",              IDC_fullrange
+    END
+    MENUITEM "ヘルプ(&H)",                  ID_HELP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            IDC_A,                  VIRTKEY, NOINVERT
+    "C",            IDC_C,                  VIRTKEY, NOINVERT
+    "M",            IDC_M,                  VIRTKEY, NOINVERT
+    "S",            IDC_S,                  VIRTKEY, NOINVERT
+    VK_DOWN,        IDC_SITA,               VIRTKEY, NOINVERT
+    VK_LEFT,        IDC_HIDARI,             VIRTKEY, NOINVERT
+    VK_NEXT,        IDC_PAGEDOWN,           VIRTKEY, NOINVERT
+    VK_PRIOR,       IDC_PAGEUP,             VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RETURN,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_SHIFTRET,            VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       IDC_MIGI,               VIRTKEY, NOINVERT
+    VK_UP,          IDC_UP,                 VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDC_WAVENAME DIALOG DISCARDABLE  0, 0, 183, 62
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,42,50,14
+    EDITTEXT        IDC_EDITWN,5,20,170,15,ES_AUTOHSCROLL
+    LTEXT           "",IDC_DATATITLE,5,5,155,8
+END
+
+IDD_MODELESS DIALOG DISCARDABLE  0, 0, 298, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "尺八運指チューナー Version 3.08"
+FONT 10, "ＭＳ 明朝"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,259,175,32,14
+    LISTBOX         IDC_LIST,7,7,284,162,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "by たつあき / www.shaku6.com  2019年3月17日",IDC_STATIC,
+                    6,180,244,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\shakuhachi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FRAME               BITMAP  DISCARDABLE     "res\\bitmapj.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "\n\nSyaku8\n\n\nSyaku8.Document\nSyaku8 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Syaku8"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "ﾌﾟﾛｸﾞﾗﾑの情報、ﾊﾞｰｼﾞｮﾝそして著作権を表示\nﾊﾞｰｼﾞｮﾝ情報"
+    ID_APP_EXIT             "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_SAVENOTES           "for making a music sheet from input sounds"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_NOTEHERZ            "tones with cent for tuning"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Syaku8.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
